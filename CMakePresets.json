@@ -4,13 +4,15 @@
     {
       "name": "windows-msvc-debug",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/o/${presetName}",
+      "binaryDir": "${sourceDir}/o/wdb",
+      "installDir": "${sourceDir}/o/wdi",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
         "VCPKG_TARGET_TRIPLET": "x64-windows-static",
         "VCPKG_HOST_TRIPLET": "x64-windows-static",
+        "VCPKG_INSTALLED_DIR": "${sourceDir}/o/vi",
         "BUILD_SHARED_LIBS": "OFF",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
         "CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreaded$<$<CONFIG:Debug>:Debug>"
@@ -28,13 +30,15 @@
     {
       "name": "windows-msvc-release",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/o/${presetName}",
+      "binaryDir": "${sourceDir}/o/wrb",
+      "installDir": "${sourceDir}/o/wri",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release",
         "CMAKE_CXX_COMPILER": "cl.exe",
         "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
         "VCPKG_TARGET_TRIPLET": "x64-windows-static",
         "VCPKG_HOST_TRIPLET": "x64-windows-static",
+        "VCPKG_INSTALLED_DIR": "${sourceDir}/o/vi",
         "BUILD_SHARED_LIBS": "OFF",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
         "CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreaded$<$<CONFIG:Debug>:Debug>"
