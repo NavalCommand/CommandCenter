@@ -1,5 +1,6 @@
 #include <NavalCommand/Gateway/Grpc/Client/Connection.h>
 #include <NavalCommand/TacticalDisplay/Display.h>
+#include <NavalCommand/Symbology/Nato/ImGui/Renderer.h>
 #include <NavalCommand/World/Engine.h>
 #include <condition_variable>
 #include <deque>
@@ -130,7 +131,8 @@ int main(int argc, char** argv)
 							refresh};
 		world.Select(faction);
 		world.Start();
-		TacticalDisplay::Display display;
+		Symbology::Nato::ImGui::Renderer renderer;
+		TacticalDisplay::Display display{renderer};
 		CommandCenter::ControlWorker controls;
 		const int result = display.Run(
 			[&]

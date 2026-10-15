@@ -2,6 +2,7 @@
 #include <NavalCommand/Gateway/Grpc/MockProvider.h>
 #include <NavalCommand/Gateway/Grpc/Server.h>
 #include <NavalCommand/TacticalDisplay/Display.h>
+#include <NavalCommand/Symbology/Nato/ImGui/Renderer.h>
 #include <NavalCommand/World/Engine.h>
 #include <atomic>
 #include <future>
@@ -24,6 +25,12 @@ namespace NavalCommand::CommandCenter
 			std::this_thread::sleep_for(20ms);
 		}
 		return false;
+	}
+
+	TEST(CommandCenterIntegration, DisplayAcceptsTheComposedImGuiRenderer)
+	{
+		Symbology::Nato::ImGui::Renderer renderer;
+		TacticalDisplay::Display display{renderer};
 	}
 
 	TEST(CommandCenterIntegration, ScopedPollingControlsReconnectAndRendering)
@@ -109,7 +116,8 @@ namespace NavalCommand::CommandCenter
 								EXPECT_EQ(world.AcquireView()->GetObservationInstance({"contact-1"})->ObserverFaction.Value, "red");
 								completed = true;
 							}};
-		TacticalDisplay::Display display;
+		Symbology::Nato::ImGui::Renderer renderer;
+		TacticalDisplay::Display display{renderer};
 		std::vector<std::future<void>> controls;
 		const auto result = display.Run(
 			[&]
