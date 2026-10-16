@@ -7,9 +7,9 @@ FetchContent_Declare(ncbuild GIT_REPOSITORY https://github.com/NavalCommand/Buil
 FetchContent_MakeAvailable(ncbuild)
 include("${ncbuild_SOURCE_DIR}/NavalCommand.Build.CMake.cmake")
 
-NavalCommandAddDependency(https://github.com/NavalCommand/Gateway.Grpc.Client.git 4fc239e328a314063b0b7e7c829425d5b9596fbf)
-NavalCommandAddDependency(https://github.com/NavalCommand/World.git 660b32c3066d8d99e57ed2e2015bd5afb6fb0fb1)
-NavalCommandAddDependency(https://github.com/NavalCommand/TacticalDisplay.git 747af514a438e119b9a454313d36df35cf83f1b4)
-NavalCommandAddDependency(https://github.com/NavalCommand/Symbology.Nato.ImGui.git 0c76bbfb7e99dae5d655adb6caac12ef4402fb89)
+NavalCommandAddDependency(https://github.com/NavalCommand/Gateway.Grpc.Client.git 4960966e505be4aa9861180660e80e439b8c0c3f)
+NavalCommandAddDependency(https://github.com/NavalCommand/World.git 66ec0b2e498a378af63f53a90d2d1ddfee63ddbc)
+NavalCommandAddDependency(https://github.com/NavalCommand/TacticalDisplay.git d59b31a7298c210e208ceed38101acdaadd71488)
+NavalCommandAddDependency(https://github.com/NavalCommand/Symbology.Nato.ImGui.git e257bd69ad91e1845115af35f17fdcec32696c0f)
 
 NavalCommandConfigureModule()
