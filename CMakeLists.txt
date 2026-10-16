@@ -9,7 +9,7 @@ include("${ncbuild_SOURCE_DIR}/NavalCommand.Build.CMake.cmake")
 
 NavalCommandAddDependency(https://github.com/NavalCommand/Gateway.Grpc.Client.git 714a80fb7d7d396a6aeb95fbf0163675a153b3d6)
 NavalCommandAddDependency(https://github.com/NavalCommand/World.git 001849a40f1d7b332311f1bd6dc46c9c9d5d4941)
-NavalCommandAddDependency(https://github.com/NavalCommand/TacticalDisplay.git a621a37f9b4cd282493611156648aba076a07282)
-NavalCommandAddDependency(https://github.com/NavalCommand/Symbology.Nato.ImGui.git 762c965d2e9762b14310d76474852fd639a9a62e)
+NavalCommandAddDependency(https://github.com/NavalCommand/TacticalDisplay.git f2d4dc86c4aa3d81f690ec56ea84d4b1f641fa54)
+NavalCommandAddDependency(https://github.com/NavalCommand/Symbology.Nato.ImGui.git fea5986c7b3c111105e2d8b96c8c78da5bd18735)
 
 NavalCommandConfigureModule()
