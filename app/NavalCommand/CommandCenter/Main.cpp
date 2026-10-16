@@ -1,4 +1,5 @@
 #include <NavalCommand/Gateway/Grpc/Client/Connection.h>
+#include <NavalCommand/Symbology/Nato/ImGui/Renderer.h>
 #include <NavalCommand/TacticalDisplay/Display.h>
 #include <NavalCommand/World/Engine.h>
 #include <condition_variable>
@@ -130,7 +131,8 @@ int main(int argc, char** argv)
 							refresh};
 		world.Select(faction);
 		world.Start();
-		TacticalDisplay::Display display;
+		Symbology::Nato::ImGui::Renderer renderer;
+		TacticalDisplay::Display display{renderer};
 		CommandCenter::ControlWorker controls;
 		const int result = display.Run(
 			[&]
@@ -143,10 +145,11 @@ int main(int argc, char** argv)
 						{}, {}, false, status.Failure ? "Simulation unavailable / reconnecting" : "Loading perspective", faction ? faction->Value : "Omniscient"};
 				}
 				return TacticalDisplay::Frame{view,
-											  TacticalDisplay::Providers{*view, *view, *view, *view, *view, *view, *view, *view, *view, *view},
+											  TacticalDisplay::Providers{*view, *view, *view, *view, *view, *view, *view, *view, *view, *view, *view},
 											  status.Stale,
 											  status.Stale ? "STALE / connection interrupted" : "Connected / session " + view->Session(),
-											  faction ? faction->Value : "Omniscient"};
+											  faction ? faction->Value : "Omniscient",
+											  view->Session()};
 			},
 			[&](std::optional<Factions::Api::Id> selected)
 			{
