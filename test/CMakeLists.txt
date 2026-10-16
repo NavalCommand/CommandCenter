@@ -1,4 +1,4 @@
-NavalCommandAddDependency(https://github.com/NavalCommand/Gateway.Grpc.git 291a296f4d3ee4df1d978038d110c5b3faad116a)
+NavalCommandAddDependency(https://github.com/NavalCommand/Gateway.Grpc.git 981a1c33a7093f209695a3a0a1729c9223dc0e84)
 find_package(GTest CONFIG REQUIRED)
 include(GoogleTest)
 add_executable(NavalCommand.CommandCenter.Test NavalCommand/CommandCenter/IntegrationTest.cpp)
