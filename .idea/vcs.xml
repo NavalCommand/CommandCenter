@@ -2,5 +2,39 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/linux-clang-debug/_deps/ncbuild-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/Gateway.Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/Gateway.Api/o/git-release/_deps/nc_eea0c16a12ca-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/Gateway.Api/o/git-release/_deps/ncbuild-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/SeaPower.Mod" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_0b1845c5e8eb-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_2ce4f16e7409-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_9c6b3dc680b0-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_c754339ee794-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_eea0c16a12ca-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/ncbuild-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/repos/Build.CMake.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/repos/Domain.Api.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/repos/Gateway.Api.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/repos/Gateway.Grpc.Api.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/repos/Gateway.Grpc.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/repos/SeaPower.Client.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/run-g9c2w2ua/repos/SeaPower.Mod.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/windows-msvc-debug-vs/_deps/ncbuild-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/windows-msvc-debug/_deps/ncbuild-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Domain.Api/o/windows-msvc-release/_deps/ncbuild-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc.Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc.Api/o/legacy-generated/out/native/_deps/gateway_api-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc.Api/o/legacy-generated/out/verified/_deps/gateway_api-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc.Client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc/o/legacy-generated/out/native/_deps/gateway_api-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc/o/legacy-generated/out/native/_deps/gateway_grpc_api-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc/o/legacy-generated/out/verified/_deps/gateway_api-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gateway.Grpc/o/legacy-generated/out/verified/_deps/gateway_grpc_api-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../TacticalDisplay" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../World" vcs="Git" />
   </component>
 </project>

@@ -145,7 +145,7 @@ int main(int argc, char** argv)
 						{}, {}, false, status.Failure ? "Simulation unavailable / reconnecting" : "Loading perspective", faction ? faction->Value : "Omniscient"};
 				}
 				return TacticalDisplay::Frame{view,
-											  TacticalDisplay::Providers{*view, *view, *view, *view, *view, *view, *view, *view, *view, *view},
+												  TacticalDisplay::Providers{*view, *view, *view, *view, *view, *view, *view, *view, *view, *view, *view},
 											  status.Stale,
 											  status.Stale ? "STALE / connection interrupted" : "Connected / session " + view->Session(),
 											  faction ? faction->Value : "Omniscient"};

@@ -129,7 +129,7 @@ namespace NavalCommand::CommandCenter
 					return TacticalDisplay::Frame{{}, {}, false, "Loading mock perspective"};
 				}
 				return TacticalDisplay::Frame{
-					view, TacticalDisplay::Providers{*view, *view, *view, *view, *view, *view, *view, *view, *view, *view}, world.GetStatus().Stale, "Mock integration test"};
+					view, TacticalDisplay::Providers{*view, *view, *view, *view, *view, *view, *view, *view, *view, *view, *view}, world.GetStatus().Stale, "Mock integration test"};
 			},
 			[&](std::optional<Factions::Api::Id> faction)
 			{
